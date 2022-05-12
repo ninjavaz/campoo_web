@@ -15,7 +15,7 @@ RUN mvn -f ${WORK_DIR}/pom.xml clean package -DskipTests
 FROM openjdk:15
 
 # Variables
-ARG WORK_DIR=/app
+ARG WORK_DIR=/campoo-zuul
 ARG CONF_DIR=${WORK_DIR}/config
 ARG JAR_FILE=target/*.jar
 ARG CFG_FILE=application.yml
