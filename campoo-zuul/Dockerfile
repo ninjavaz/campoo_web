@@ -1,6 +1,6 @@
 FROM  maven:3.6.3-openjdk-15 AS builder
 
-ARG WORK_DIR=/home/ninjavas
+ARG WORK_DIR=/home/ninjavas/campoo_web/campoo-zuul
 
 MAINTAINER Dominik Nuszkiewicz <dknuszkiewicz@gmail.com>
 
