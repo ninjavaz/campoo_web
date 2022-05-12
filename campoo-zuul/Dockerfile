@@ -5,7 +5,7 @@ ARG WORK_DIR=/home/ninjavas/campoo_web/campoo-zuul
 MAINTAINER Dominik Nuszkiewicz <dknuszkiewicz@gmail.com>
 
 COPY src ${WORK_DIR}/src
-COPY pom.xml ${WORK_DIR}/pom.xml dependency:go-offline
+#COPY pom.xml ${WORK_DIR}/pom.xml dependency:go-offline
 
 ENV MAVEN_OPTS=-Dhttps.protocols=TLSv1,1,TLSv1.2
 RUN mvn -f ${WORK_DIR}/pom.xml clean package -DskipTests
