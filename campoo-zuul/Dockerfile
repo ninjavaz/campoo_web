@@ -16,7 +16,7 @@ FROM openjdk:15
 
 # Variables
 ARG WORK_DIR=/campoo-zuul
-ARG CONF_DIR=${WORK_DIR}/config
+ARG CONF_DIR=${WORK_DIR}/src/main/resources/
 ARG JAR_FILE=target/*.jar
 ARG CFG_FILE=application.yml
 #ARG LOG_CFG=logback.xml
