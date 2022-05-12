@@ -24,7 +24,7 @@ ARG SVC_NAME=campoo-zuul
 
 
 COPY --from=builder /home/app/${JAR_FILE} ${WORK_DIR}/${SVC_NAME}.jar
-ADD ${CFG_FILE} ${WORK_DIR}/config/application.yml
+ADD ${CFG_FILE} ${WORK_DIR}/src/main/resources/application.yml
 #ADD ${LOG_CFG} ${WORK_DIR}/config/logback.xml
 
 
