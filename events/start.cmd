@@ -1,2 +1,2 @@
 title campoo-events
-java -jar target\events-1.0.0.jar 
+java -jar target\events-1.0.4.jar
