@@ -9,6 +9,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.util.List;
 
 
 @Data
@@ -21,11 +22,11 @@ public class Event {
     @Id
     @GeneratedValue
     private Long id;
-    //private User owner;
+    private User owner;
     private String name;
-    //private Location location;
+    private Location location;
     private Integer maxMembers;
-    //private List<User> members;
+    private List<User> members;
     private String description;
-    //private Enum<EventType> eventType;
+    private EventType eventType;
 }

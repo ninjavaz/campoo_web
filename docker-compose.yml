@@ -1,6 +1,13 @@
 version: "3"
 
 services:
+  frontend:
+    image: campoo/campoo-frontend:${SVC_FRONTEND_VERSION}
+    container_name: campoo-frontend
+    volumes:
+      - ./frontend/config:/etc/nginx/conf.d
+    ports:
+      - "4200:80"
   postgres:
     container_name: campoo-postgres
     image: postgres

@@ -13,6 +13,6 @@ RUN ./compile.sh && ./compile.sh
 
 FROM nginx:1.20.2
 
-COPY --from=builder /app-ui/dist/campoo/ /usr/share/nginx/html
+COPY --from=builder /app-ui/dist/frontend /usr/share/nginx/html
 
 
